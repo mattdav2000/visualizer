@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --use-npm --no-turbopack)",
+      "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:$HOME/.nvm/versions/node/*/bin:$PATH\")",
+      "Bash(npx --version)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(brew --prefix)",
+      "Read(//Users/mattdav_home/**)",
+      "Bash(curl -fsSL https://nodejs.org/dist/v20.18.0/node-v20.18.0.pkg -o /tmp/node-installer.pkg)",
+      "Bash(sudo installer:*)",
+      "Bash(curl -fsSL https://fnm.vercel.app/install)",
+      "Bash(bash)",
+      "Bash(bash -s -- --install-dir \"$HOME/.fnm\" --skip-shell)",
+      "Bash(mkdir -p \"$HOME/.fnm\")",
+      "Bash(curl -fsSL https://github.com/Schniz/fnm/releases/latest/download/fnm-macos.zip -o /tmp/fnm.zip)",
+      "Bash(unzip -o /tmp/fnm.zip -d \"$HOME/.fnm\")",
+      "Bash(chmod +x \"$HOME/.fnm/fnm\")",
+      "Bash(\"$HOME/.fnm/fnm\" --version)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
