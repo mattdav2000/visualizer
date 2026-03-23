@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash-exp",
+      model: "gemini-2.0-flash-preview-image-generation",
       generationConfig: {
         // @ts-expect-error - responseModalities is valid but not in types yet
         responseModalities: ["TEXT", "IMAGE"],
