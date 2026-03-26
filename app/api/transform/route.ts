@@ -33,7 +33,9 @@ export async function POST(req: NextRequest) {
 
     const prompt = `You are an expert architectural visualization photographer. Transform this 3D rendering into an ultra-photorealistic photograph that looks indistinguishable from a real photo taken by a professional real estate photographer with a Canon EOS R5 and 24-70mm lens.
 
-CRITICAL: Preserve the EXACT same pool shape, layout, dimensions, structures, features, and camera angle from the original rendering. Do not add or remove any built structures.
+CRITICAL — 1:1 MATCH: You MUST preserve EVERY element from the original rendering exactly as-is: pool shape, patio/deck layout, all hardscape structures, steps, ledges, spa, fire features, pergolas, seating walls, fencing — everything. Do NOT remove, reshape, resize, or reposition any built element. The output must be a 1-for-1 match of the original design, just made photorealistic.
+
+CAMERA: Keep the EXACT same perspective and camera angle as the original rendering, but zoom out slightly (about 10-15% wider field of view) so the full pool area and surrounding patio/landscaping are visible with a bit more breathing room at the edges. Do NOT change the viewpoint direction or height — only widen the frame slightly.
 
 WATER: Crystal-clear turquoise pool water with realistic caustic light patterns on the pool floor, subtle surface ripples, accurate reflections of surrounding elements, and visible depth gradient from shallow to deep end.
 
